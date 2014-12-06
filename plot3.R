@@ -20,4 +20,10 @@ lines(HPCt$DateTime,HPCt$Sub_metering_2,xlab="",ylab= "Energy Sub Meetering",typ
 lines(HPCt$DateTime,HPCt$Sub_metering_3,xlab="",ylab= "Energy Sub Meetering",type="l",col="blue")
 legend("topright",legend=c("sub_meeting_1","sub_meeting_2","sub_meeting_3"),lty = c(1), col=c("black","red","blue") )
 
+#copy plot from screen to a file.
+
+dev.copy(png, file = "plot3.png",width = 480, height = 480 )
+dev.off()
+
+
 

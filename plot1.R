@@ -9,3 +9,8 @@ HPCt2 <- transform(HPCt1, Date = dmy(Date))
 
 # plot histogram
 hist(HPCt2$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)",main ="Global Active Power")
+
+#copy plot from screen to a file.
+
+dev.copy(png, file = "plot1.png",width = 480, height = 480 )
+dev.off()

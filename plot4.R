@@ -32,3 +32,9 @@ plot(x=HPCt$DateTime,y=HPCt$Voltage,xlab="datetime",ylab= "Voltage",xaxp=c(234,2
 #plot the fourth graph
 
 plot(x=HPCt$DateTime,y=HPCt$Global_reactive_power,xlab="datetime",ylab= "Global Reactive Power",xaxp=c(234,238,4),type = "l")
+
+#copy plot from screen to a file.
+
+dev.copy(png, file = "plot4.png",width = 480, height = 480 )
+dev.off()
+

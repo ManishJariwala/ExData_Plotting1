@@ -16,3 +16,9 @@ HPCt <- cbind(HPCt, DateTime = xxx)
 
 # plot the same
 plot(HPCt$DateTime,HPCt$Global_active_power,xlab="",ylab= "Global Active Power (kilowatts)",type="l")
+
+
+#copy plot from screen to a file.
+
+dev.copy(png, file = "plot2.png",width = 480, height = 480 )
+dev.off()
